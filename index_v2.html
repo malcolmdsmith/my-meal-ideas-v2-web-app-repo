@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles_v2.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="food.js"></script>
+    <script src="listByCategories.js"></script>
+    <title>My Meal Ideas</title>
+  </head>
+  <body>
+    <script>
+      $(document).ready(function () {
+        console.info("loading...");
+        //loadFood();
+        loadRecipes();
+
+        $("#showType").change(function () {
+          showTypeChange($(this).val());
+        });
+      });
+    </script>
+
+    <div id="wrapper">
+      <header>
+        <div id="logo">
+          <img src="images/heart-small.png" id="heart-logo" alt="" />
+          <img src="images/MyMealIdeas.png" alt="" />
+        </div>
+        <img src="images/profile.png" alt="" id="profileIcon" />
+      </header>
+      <div class="wrapper py-60">
+        <div id="searchContainer">
+          <div id="keywords">Search by ingredient...</div>
+          <div id="searchButton">
+            <img src="images/search.png" id="searchIcon" alt="jpeg" />
+          </div>
+        </div>
+      </div>
+      <div id="sign-nav-container">
+        <div id="sign">
+          <img src="images/pin2.png" alt="" id="pin" />
+          <p>
+            Are you constantly thinking about your meals and what to make each
+            day and have forgotten your recipes from the past?
+          </p>
+          <p>
+            This site is all about listing all the meals you have had, and then
+            being able to browse through them to decide. You dont need to enter
+            the recipe, you can just enter the title or a link if its on another
+            site like YouTube for example. Or you can just enter the full recipe
+            listing each ingredient.
+          </p>
+        </div>
+        <div id="nav-buttons-container">
+          <button class="nav-buttons">+ NEW RECIPE</button>
+          <button class="nav-buttons">
+            <img
+              src="images/shoppingTrolleywhite.png"
+              alt=""
+              id="shoppingTrolley"
+            />
+            SHOPPING LIST
+          </button>
+        </div>
+      </div>
+    </div>
+    <nav>
+      <!-- <ul>
+        <li></li>
+        <li>
+          <img src="images/shoppingTrolleywhite.png" alt="" id="shoppingTrolley" />
+          Shopping List
+        </li>
+      </ul> -->
+    </nav>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#00008b"
+        fill-opacity="1"
+        d="M0,32L1440,64L1440,0L0,0Z"
+      ></path>
+    </svg>
+    <div id="list-header-container">
+      <select id="showType">
+        <option value="1">Browse by Title</option>
+        <option value="2">Browse by Images</option>
+        <option value="3">Browse By Category</option>
+      </select>
+      <div id="page-prev-next">
+        <select>
+          <option>20 per page</option>
+          <option>50 per page</option>
+        </select>
+        <ul>
+          <li>&lt; Previous</li>
+          <li>Next &gt;</li>
+        </ul>
+      </div>
+    </div>
+    <hr id="divider" />
+    <div id="numberMeals">57 meals found.</div>
+    <div id="content"></div>
+    <footer>&COPY; Copyright 2022</footer>
+  </body>
+</html>

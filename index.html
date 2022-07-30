@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="food.js"></script>
+    <script src="listByCategories.js"></script>
+    <title>My Meal Ideas</title>
+  </head>
+  <body>
+    <script>
+      $(document).ready(function () {
+        console.info("loading...");
+        //loadFood();
+        loadRecipes();
+
+        $("#showType").change(function() {
+            showTypeChange($(this).val());
+        })
+      });
+    </script>
+
+    <div id="wrapper">
+    <header>
+      <div id="logo">
+        <img src="images/heart-small.png" id="heart-logo" alt="" />
+        <img src="images/MyMealIdeas.png" alt="" />
+      </div>
+      <ul>
+        <li>+ NEW RECIPE</li>
+        <li>
+          <img src="images/shoppingTrolley.png" alt="" id="shoppingTrolley" />
+          SHOPPING LIST
+        </li>
+        <li><img src="images/profile.png" alt="" id="profileIcon" /></li>
+      </ul>
+    </header>
+    <div class="wrapper py-60">
+      <div id="searchContainer">
+        <div id="keywords">Search by ingredient...</div>
+        <div id="searchButton">
+          <img src="images/search.png" id="searchIcon" alt="jpeg" />
+        </div>
+      </div>
+    </div>
+    </div>
+    <div id="listNavBar">
+      <select>
+        <option>20 per page</option>
+        <option>50 per page</option>
+      </select>
+      <select id="showType"">
+        <option value="1">Show List</option>
+        <option value="2">Show Images</option>
+        <option value="3">Show By Category</option>
+      </select>
+      <ul>
+        <li>&lt; Previous</li>
+        <li>Next &gt;</li>
+      </ul>
+    </div>
+    <hr id="divider" />
+    <div id="numberMeals">57 meals found.</div>
+    <div id="content"></div>
+  </body>
+</html>

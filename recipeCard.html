@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles_v2.css" />
+    <link rel="stylesheet" href="recipeCard.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="food.js"></script>
+    <script src="listByCategories.js"></script>
+    <title>My Meal Ideas</title>
+  </head>
+  <body>
+    <script>
+      $(document).ready(function () {
+        console.info("loading...");
+        //loadFood();
+        //loadRecipes();
+      });
+    </script>
+
+    <div id="wrapper">
+      <header>
+        <div id="logo">
+          <img src="images/heart-small.png" id="heart-logo" alt="" />
+          <img src="images/MyMealIdeas.png" alt="" />
+        </div>
+        <img src="images/profile.png" alt="" id="profileIcon" />
+      </header>
+      <div class="wrapper py-60">
+        <div id="searchContainer">
+          <div id="keywords">Search by ingredient...</div>
+          <div id="searchButton">
+            <img src="images/search.png" id="searchIcon" alt="jpeg" />
+          </div>
+        </div>
+        <div id="sign">
+          Do you ever forget all the meals that you have made in the past and
+          would like to be able to have a list of them handy. This website
+          allows you to add to a list of your meal ideas either a full recipe or
+          just the title or maybe a link to another website or youtube.
+        </div>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>+ New Recipe</li>
+        <li>
+          <img
+            src="images/shoppingTrolleywhite.png"
+            alt=""
+            id="shoppingTrolley"
+          />
+          Shopping List
+        </li>
+      </ul>
+    </nav>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#00008b"
+        fill-opacity="1"
+        d="M0,32L1440,64L1440,0L0,0Z"
+      ></path>
+    </svg>
+    <div id="recipeCard">
+      <div id="recipeTitle">Apricot Chicken</div>
+      <hr id="recipeDivider" />
+      <div>
+        <div>
+          <img src="images/apricot-chicken.jpeg" alt="" id="recipeImage" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
