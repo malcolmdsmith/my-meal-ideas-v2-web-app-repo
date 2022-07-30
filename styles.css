@@ -63,7 +63,7 @@ div li {
   border-radius: 15px;
   top: -30px;
   left: 40px;
-  font-size: 1em;
+  font-size: 0.9em;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
 }
 
@@ -169,7 +169,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 400px;
+  width: 350px;
   height: 50px;
 }
 
