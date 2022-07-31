@@ -58,11 +58,11 @@ div li {
   background-color: #fff;
   position: relative;
   width: 280px;
-  height: 230px;
+  height: 190px;
   padding: 10px;
   border-radius: 15px;
   top: -30px;
-  left: 40px;
+  left: 30px;
   font-size: 0.9em;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
 }
@@ -169,7 +169,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 350px;
+  width: 320px;
   height: 50px;
 }
 
